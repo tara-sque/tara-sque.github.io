@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tamara's Website</title>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="style_cont.css">
+    </head>
+    <body> 
+
+        <!--TOP NAVIGATION --> 
+        <div class="navigation">
+            <div class="leftnav">
+                <a class="leftnavclick" href="index_eng.html">
+                    <img class="round" src="img/d20_white.png" height="30px" width="30px"
+                    alt="White lineart of a d20 die.">
+                    <h1>TAMARA ALTMANN</h1>
+                </a>
+                <a class="menuicon" onclick="DropDown()">
+                    <img src="img/Menu_Burger.png" alt="three lines">
+                </a>
+            </div>
+            <div class="rightnav" id="flexnav">
+                <div class="lead"><a href="index_eng.html">Home</a></div>
+                <div class="lead"><a href="cv.html">About and CV</a></div>
+                <div class="lead"><a class="active" href="contact.html">Contact</a></div>
+                <div class="languagechoice lead">
+                    <a class="LanguageChange" href="kontakt.html">De</a>
+                    <p>|</p>
+                    <a class="LanguageChangeActive" href="contact.html">Eng</a>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTENT -->
+        <div class="contact_content">
+            <div class="contactbox-left">
+                <h2>Contact Me</h2>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="inputbox">
+                    <div class="inputs">
+                        <input type="hidden" name="access_key" value="b55669e3-7a21-4e43-9c6a-ffdcb2dbdbf7"> 
+                        <input type="text" class="contact-input" name="name" placeholder="Name" required><br><br>
+                        <input type="email" class="contact-input" name="mail" placeholder="E-Mail" required><br><br>
+                        <input type="text" class="contact-input" name="betreff" placeholder="Subject" required ><br><br>
+                        <textarea type="text" class="contact-input" name="message" placeholder="Message" required></textarea><br><br>
+                    </div>
+                    <input type="submit" class="submit-button" value="> Submit">
+                </form>
+            </div>
+            <div class="contactbox-right">
+                <img src="img/contact_purple.png" alt="A colorful image of a mail.">
+            </div>
+        </div>
+
+        <!--FOOTER -->
+        <div class="footer">
+            <h3>TAMARA ALTMANN</h3>
+            <a href="mailto:c.tamara.altmann@gmail.com">c.tamara.altmann@gmail.com</a>
+            <div class="socialsfooter">
+                <a href="https://www.linkedin.com/in/tamara-altmann/"><img src="img/Logos/Linked.png" alt="linked in logo"></a>     
+                <a href="https://www.instagram.com/taraa_ca/"><img src="img/Logos/Insta.png" alt="insta logo"></a>
+                <!--- <a href=""><img src="img/Logos/github.png" alt="github logo"></a> --->
+            </div>
+            <div>
+                <h3>&copy; 2025</h3>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="app/js/script.js"></script> 
+</html>

@@ -1,0 +1,630 @@
+/* --- Fonts --- */
+    /* -- Logo --*/
+     @font-face { /* BenchNineReg */
+    font-family: BenchNineReg;
+    src: url(fonts/BenchNine-Regular.ttf);
+    }
+
+    /* -- Logo2 --*/
+    @font-face { /* BenchNineLight */
+        font-family: BenchNineLight;
+        src: url(fonts/BenchNine-Light.ttf);
+    }
+
+    /* -- Lebenslauf Page -- */
+    @font-face { /* Biryani */
+        font-family: Biryani;
+        src: url(fonts/Biryani-Regular.ttf);
+    }
+    @font-face { /* BiryaniBold */
+        font-family: BiryaniBold;
+        src: url(fonts/Biryani-Bold.ttf);
+    }
+
+/*--- Fonts End ---*/
+
+
+
+/*--- ALL ELEMENTS ---*/
+
+body {
+    background-color: white;
+    margin: 0%;
+    font-family: 'Biryani';
+}
+
+
+
+
+/* --- START NAVIGATION --- */
+.navigation {
+    position: sticky;
+    top: 0; 
+    z-index: 3;
+    background-color: #000000; 
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+    .leftnav {
+        display: flex;
+        flex-grow: 1;
+        white-space: nowrap;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+    }
+    .leftnav a{
+        flex-wrap: nowrap;
+    }
+        /* Format Name & Die Logo*/
+        .navigation h1 {
+            font-family:'BenchNineLight';
+            font-size: 100%;
+            color: whitesmoke;
+            float: left;
+            margin: 11px 15px 5px 10px;
+        }
+        .round {
+            margin: 5px;
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            float: inline-start;
+        }
+        .menuicon{
+            height: 13px;
+            padding: 13px 10px 0 10px;
+            margin: 0;
+            display: none;
+            cursor: pointer;
+        }
+
+    .rightnav {
+        display: flex;
+        justify-content: end;
+    }
+
+    /* Style the links inside the navigation bar */
+    .lead a{
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 40px;
+        text-decoration: none;
+        font-family: 'BenchNineLight';
+        font-size: 100%;
+    }
+    .navigation p {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'BenchNineLight';
+      font-size: 100%;
+      margin: 0;
+      padding: 10px 0;
+    }
+    .navigation a.LanguageChange {
+      margin: 0;
+      padding: 10px 5px;
+    }
+    .rightnav a.LanguageChangeActive {
+      font-weight: bold;
+      padding:  10px 5px;
+    }
+
+
+
+    /* Change the color of links on hover */
+    .navigation a:hover {
+        background-image: linear-gradient(#30392D, black);
+        color: white;
+    }
+    /* Add a color to the active/current link */
+    .navigation a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    @media screen and (max-width: 600px) {
+        .navigation{
+            flex-wrap: wrap;
+        }
+        .rightnav {
+            flex-wrap: wrap;
+        }
+        .rightnav a{
+            display: none;
+        }
+        .rightnav p{
+            display: none;
+        }
+        .menuicon{
+            display: flex;
+            align-self: right;
+        }
+        .rightnav.down a{
+            display: flex;
+            flex-grow: 0;
+            padding: 10px 20px;
+            flex-grow: 1;
+        }
+        .rightnav.down p{
+            display: block;
+        }
+
+        .lead{
+            display: flex;
+            width: 100vw;
+            flex-grow: 1;
+        }
+
+      }
+
+
+
+
+
+
+/* --- END NAVIGATION --- */
+
+
+
+
+
+
+
+
+/* Responsive layout - makes a one column layout (100%)*/
+@media (max-width: 600px) {
+    .content{
+        flex-wrap: wrap;
+    }
+    .rightcv, .leftcv {
+      flex: 100%;
+      min-width: 320px;
+    }
+    .myfacecontainer img{
+        position: relative;
+        top: 10px;
+        left: 32vw;
+        height: 170px;
+    }
+    .footer a {
+        display: none;
+      }
+}
+
+/* Responsive layout - ensures correct wrap priorities in wide screens*/
+@media (min-width: 600px) {
+    .content{ 
+        flex-wrap: nowrap;
+    }
+    .myfacecontainer img{
+        position: relative;
+        top: 10px;
+        left: 91px;
+        height: 170px;
+    }
+    .leftcv{
+        max-width: 370px;
+    }
+}
+
+
+/* --- START CONTENT --- */
+.content{
+    background-color: whitesmoke;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+
+}
+    .leftcv{
+        flex-grow: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+        .myfacecontainer{
+            height: 120px;
+        }
+
+        .greybackdrop{
+            background-color: #2C2F2D;
+            flex-grow: 1;
+            display: flex;
+            text-align: center;
+
+        }
+            .skills{
+                margin: 70px 20px 20px 20px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: top;
+                gap: 8px;
+            }
+            .skill{
+                background-color: #353836;
+                border-radius: 10px;
+                padding-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .skill h3{
+                color: #ffffff;
+                font-size: 20px;
+                margin: 0;
+                padding: 3px;
+            }
+            .skill h4{
+                color: white;
+                font-size: 12px;
+                font-weight: lighter;
+            }
+            .skillRowContainer{
+                margin: 0 20px;
+                min-width: 250px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                margin-bottom: 6px;
+            }
+                .skillImgContainer{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                }
+                    .skillImgContainer h4{
+                        margin-top: -30px;
+                        margin-bottom: -3px;
+                        color: white;
+                        font-size: 12px;
+                        font-weight: lighter;
+                    }
+                    .skillImgContainer img{
+                        margin-top: -10px;
+                        padding-left: 3px;
+                        width: 73px;
+                    }
+            .sprachbox {
+                display: flex;
+                flex-direction: column;
+                padding: 0 20px;
+            }
+            .sprachbox img{
+                margin: -1px 10px 8px 10px;
+                align-self: flex-start;
+            }
+                .sprachtitel{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    padding: 0;
+                }
+                    .sprachtitel h4{
+                        padding: 0;
+                        margin: 0;
+                    }
+
+
+
+.rightcv{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+    .titlebox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 25px 0px 5px 40px;
+    }
+        .title{
+            flex-grow: 1;
+        }
+            .title h1{
+                font-size: 25px;
+                font-family: 'BiryaniBold';
+                font-weight: lighter;
+                margin: 0;
+                letter-spacing: -1px;
+            }
+            .title a{
+                color: black;
+                font-family: 'BenchNineReg';
+                font-size: 18px;
+                margin: 0;
+
+            }
+        .downloadbutton {
+            flex-grow: 0.5;
+            display: flex;
+            justify-content: left;
+        }
+            .dlbLarge{
+                font-family: 'Biryani';
+                font-size: 20px;
+                color:#f2f2f2;
+                background-color: #29402F; 
+                border-radius: 10px;
+                height: 75px;
+                flex-shrink: 0;
+                width: 260px;
+                text-align: center;
+                padding-top: 7px;
+            }
+            .dlbLarge:hover{
+                cursor: pointer; 
+
+            }
+    .rightcv .over{
+        padding-left: 40px;
+        margin-bottom: 10px;
+    }
+
+    .workbox{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            flex-wrap: wrap;
+            background-color: #d6e6dc7c;
+            margin: 0px 10px 10px 10px;
+            padding: 10px 10px 5px 5px;
+            border-radius: 10px;
+        }
+        .workbasics{
+            flex: 15%;
+            display: flex;
+            max-width: 320px;
+            min-width: 280px;
+        }
+            .download{
+                padding: 2px 3px 0 12px;
+                width: 15px;
+            }
+                .dlb_small {
+                    width: 15px;
+                    height: 15px;
+                }
+                .worktitle img{
+                    width: auto;
+                    margin-left: 3px;
+                    max-height: 55px;
+                    height: auto;
+                    max-width: 100px;
+
+                }
+            .workbox h2{
+                font-size: 16px;
+                margin: 0 0 -6px 0;
+                font-weight: bolder;
+
+            }
+            .workbox h3{
+                font-size: 13px;
+                margin: 5px 0 0 3px;
+                font-weight: bold;
+            }
+            .workbox p{
+                font-size: 12px;
+                margin: 0 0 0 6px;
+            }
+            .workbox h4{
+                font-size: 12px;
+                margin: 5px 0 0 3px;
+                font-weight: bold;
+            }
+            .workbox ul{
+                font-size: 12px;
+                margin: 0 0 0 6px;
+            }
+            .OpenClose {
+                margin: 8px 0 0 2px;
+                width: 15px;
+            }
+
+        .work{
+            display: flex;
+            flex:25%;
+            padding-left: 10px;
+            min-width: 280px;
+        }    
+
+    .collapsbox{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+    }
+
+        /* Style the button that is used to open and close the collapsible content */
+        .collapsible {
+            cursor: pointer;
+        }
+        
+        /* Add a background color to the button if it is clicked on*/
+        .active:hover {
+            background-color: #ccc;
+        }
+           
+.s_space{
+    height: 5px;
+}
+
+.deets{
+    display: none;
+}
+
+/* --- END LEBENSLAUF --- */
+
+
+/* --- START CONTACT POP-UP ---*/
+.contactbox{
+    font-family: 'BenchNineLight';
+    position: absolute;
+    top: 10vw;
+    background-color: #a6c7ac;
+    margin: 60px 20vw;
+    width: 60vw;
+    box-shadow: 2px 7px 12px 2px rgba(0, 0, 0, 0.381), 4px 15px 30px 4px rgba(0, 0, 0, 0.203);
+    z-index: 2;
+    border-radius: 10px;
+    display: none;
+    color: white;
+
+}
+.contactboxinside{
+    font-family: 'BenchNineLight';
+    margin: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3px;
+    margin: 0;
+}
+.contactbox h2{
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-size: 40px;
+}
+#closex{
+    font-family: 'Biryani';
+    position: absolute;
+    right: 30px;
+    padding: 0 10px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 3px;
+}
+#closex:hover{
+    font-weight: bold;
+    background-color: #29402f13;
+}
+#closex p{
+    margin: 0;
+    padding:0;
+}
+.contact-input{
+    border-radius: 5px;
+    width: 250px;
+    margin: 0;
+    min-height: 25px;
+    border: none;
+}
+input::placeholder {
+    font-family: 'BenchNineLight';
+    font-size: 16px;
+}
+select{
+    margin: 0 0 20px 0;
+    padding: 2px 5px;
+    font-family: 'BenchNineLight';
+    font-size: 16px;
+    width: 254px;
+    border: 1px solid #4e8e5f;
+    border-radius: 5px;
+    color: #29402fdc;
+    background-color: #ffffffe0;
+    cursor: pointer;
+}
+
+
+
+.submit-button{
+    font-family: 'BenchNineLight';
+    background: linear-gradient(90deg, rgb(20, 77, 35), rgb(16, 121, 93));
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+    height: 33px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 5px;
+    border: none;
+    padding: 5px 5px 10px 5px;
+    align-self: center;
+}
+.submit-button:hover{
+    background: linear-gradient(90deg, rgb(42, 156, 73), rgb(27, 194, 150));
+    font-weight: bold;
+}
+
+
+@media screen and  (max-width:600px){
+    .downloadbutton{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* --- START FOOTER --- */
+@media screen and (max-width:600px){
+    .footer a{
+        display: none;
+    }
+    .socialsfooter a{
+        display: block;
+    }
+    
+}
+
+.footer {
+    background-color:#29402f; 
+    overflow: hidden;
+    margin: 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
+  .footer h3{
+    font-family:'BenchNineLight';
+    font-size: 100%;
+    color: whitesmoke;
+    float: left;
+    margin: 11px 0 5px 10px;
+  }
+  .footer a{
+    float: left;
+    color: #f2f2f2;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-family: 'BenchNineLight';
+    font-size: 100%;
+  }
+  .socialsfooter a{
+    padding: 0; 
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .footer img{
+    opacity: 80%;
+    width: 32px;
+  }
+  .socialsfooter {
+    display: flex;
+    padding: 5px;
+  }
+
+
+
+/* --- END FOOTER --- */

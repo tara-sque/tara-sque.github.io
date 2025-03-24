@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tamara's Website</title>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="style_lbs.css">
+    </head>
+    <body>
+        <!--TOP NAVIGATION -->
+        <div class="navigation">
+            <div class="leftnav">
+                <a class="leftnavclick" href="index.html">
+                    <img class="round" src="img/d20_white.png" height="30px" width="30px"
+                    alt="White lineart of a d20 die.">
+                    <h1>TAMARA ALTMANN</h1>
+                </a>
+                <a class="menuicon" onclick="DropDown()">
+                    <img src="img/Menu_Burger.png" alt="three lines">
+                </a>
+            </div>
+            <div class="rightnav" id="flexnav">
+                <div class="lead"><a href="index.html">Home</a></div>
+                <div class="lead"><a class="active" href="Lebenslauf.html">Lebenslauf</a></div>
+                <div class="lead"><a href="kontakt.html">Kontakt</a></div>
+                <div class="languagechoice lead">
+                    <a class="LanguageChangeActive" href="Lebenslauf.html">De</a>
+                    <p>|</p>
+                    <a class="LanguageChange" href="cv.html">Eng </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="leftcv">
+                <div class="myfacecontainer">
+                    <img src="img/Headshot_2.png" alt="">
+                </div>
+                <div class="greybackdrop">
+                    <div class="skills">
+                        <div class="skill">
+                            <h3>Programmieren</h3>
+                            <div class="skillRowContainer">
+                                <div class="skillImgContainer">
+                                    <img src="img/skills/HTML.png" alt="">
+                                    <h4>HTML</h4>
+                                </div>
+                                <div class="skillImgContainer">
+                                    <img src="img/skills/CSS.png" alt="">
+                                    <h4>CSS</h4>
+                                </div>
+                                <div class="skillImgContainer">
+                                    <img src="img/skills/JavaScript.png" alt="">
+                                    <h4>JavaScript</h4>
+                                </div>                                
+                            </div>
+                            
+                            <div class="skillRowContainer">
+                                <div class="skillImgContainer">
+                                    <img src="img/skills/Skill Circle.png" alt="">
+                                    <h4>Python</h4>
+                                </div>
+                                <div class="skillImgContainer">
+                                    <img src="img/skills/C++.png" alt="">
+                                    <h4>C++</h4>
+
+                                </div>
+                                <div class="skillImgContainer">
+                                    <img src="img/skills/Git.png" alt="">
+                                    <h4>Git</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skill">
+                            <h3>Design</h3>
+                            <div class="skillRowContainer">
+                                <div class="skillImgContainer">
+                                    <img src="img/skills/Figma.png" alt="">
+                                    <h4>Figma</h4>
+                                </div>
+                                <div class="skillImgContainer">
+                                    <img src="img/skills/Canva.png" alt="">
+                                    <h4>Canva</h4>
+                                </div>
+                                <div class="skillImgContainer">
+                                    <img src="img/skills/Procreate.png" alt="">
+                                    <h4>Procreate</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>Sprachen</h3>
+                            <div class="sprachbox">
+                                <div class="sprachtitel">
+                                    <h4>Deutsch</h4>
+                                    <h4>C2</h4>
+                                </div>
+                                <img src="img/full_bar.png" alt="">
+                                <div class="sprachtitel">
+                                    <h4>Englisch</h4>
+                                    <h4>C2</h4>
+                                </div>
+                                <img src="img/full_bar.png" alt="">
+                                <div class="sprachtitel">
+                                    <h4>Französisch</h4>
+                                    <h4>B1-2</h4>
+                                </div>
+                                <img src="img/med_bar.png" alt="">
+                                <div class="sprachtitel">
+                                    <h4>Japanisch</h4>
+                                    <h4>A2</h4>
+                                </div>
+                                <img src="img/small_bar.png" alt="">
+                                <div class="sprachtitel">
+                                    <h4>Spanisch</h4>
+                                    <h4>A1-2</h4>
+                                </div>
+                                <img src="img/small_bar.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightcv">
+                <div class="titlebox">
+                    <div class="title">
+                        <h1>TAMARA ALTMANN</h1>
+                        <a href="mailto:c.tamara.altmann@gmail.com">c.tamara.altmann@gmail.com</a>
+                    </div>
+                    <div class="downloadbutton">
+                        <button class="dlbLarge" onclick=OpenPopUp()> CV Anfragen</button>
+                    </div>
+                </div>
+
+
+
+
+                <!--WORK -->
+
+                <div class="worktitle">
+                    <h2 class="over">Arbeitserfahrung</h2>
+                </div>
+
+                    <!--PWC 1-->
+                    <div class="workbox withdeets">
+                        <div class="workbasics">
+                            <div class="download">
+                               <!-- <a href="tbd_download_pwc">
+                                    <img class=dlb_small src="img/DownloadButton.png" alt="">
+                                </a>-->
+                            </div>
+                            <div class="worktitle">
+                                <h2>PricewaterhouseCoopers</h2>
+                                <h3>Oerlikon, Schweiz</h3>
+                                <img class="deets" src="img/Logos/pwc_Logo.png">
+                            </div>
+                        </div>
+                        <div class="work">
+                            <div class="timeline">
+                                <img src="img/OpenClose.png" class="OpenClose collapsible">
+                            </div>
+                            <div class="workdetails">
+                                <h3>Okt 2021- Aug 2023&emsp;|&emsp;Contractor Assurance  </h3>
+                                <p>20% Allgemein, bis 90% in den Busy Seasons im Winter, Pause im Sommer</p>
+                                <h4 class="deets">Versicherungs- und Bankenrevisionen</h4>
+                                <ul class="deets">
+                                    <li>Detailorientierte Überprüfung und Rekalkulation von Finanzdokumenten für 
+                                    Grosskunden unter Einhaltung regulatorischer Standards</li>
+                                    <li>Projektbasierte Team- und Kundenarbeit in diversen Umfeldern</li>
+                                </ul>
+                                <div class="s_space"></div>
+                                <h3 class="deets">Dec 2020- Mar 2021&emsp;|&emsp; Assurance Associate </h3>
+                                <p class="deets">4 Monate Busy Season Praktikum</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Strathearn-->
+                    <div class="workbox withdeets"> 
+                        <div class="workbasics">
+                            <div class="download">
+                                <!-- <a href="tbd_download_pwc">
+                                    <img class=dlb_small src="img/DownloadButton.png" alt="">
+                                </a> -->
+                            </div>
+                            <div class="worktitle">
+                                <h2>Gleneagles Hotel</h2>
+                                <h3>Auchterarder, Scotland</h3>
+                                <img class="deets" src="img/Logos/Gleneagles_Logo.png">
+                            </div>
+                        </div>
+                        <div class="work">                            
+                            <div class="timeline">
+                                <img src="img/OpenClose.png" class="OpenClose collapsible">
+                            </div>
+                            <div class="workdetails">
+                                <h3>Feb 2019- Aug 2019&emsp;|&emsp;Chef de Rang  </h3>
+                                <p>Teil der Neueröffnung des Fine Dining Restaurant Strathearn </p>
+                                <h4 class="deets">Luxus F&B Internship</h4>
+                                <ul class="deets">
+                                    <li>Gueridon Service, Tableside Flambées, Luxus Service</li>
+                                    <li>Prozessdesign bei Neueröffnung im Team</li>
+                                    <li>Mittarbeiterin des Monats April für ausserordentliche Teamarbeit</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+
+
+
+
+
+
+
+
+
+
+                <!--tbd pwc2 open close strathearn etc.? -->
+
+                <!--AUSBILDUNG -->
+                <div class="worktitle">
+                    <h2 class="over">Ausbildung</h2>
+                </div>
+
+                    <!--Informatik-->
+                    <div class="workbox withdeets">
+                        <div class="workbasics">
+                            <div class="download">
+                                <!-- <a href="tbd_download_pwc">
+                                    <img class=dlb_small src="img/DownloadButton.png" alt="">
+                                </a>-->
+                            </div>
+                            <div class="worktitle">
+                                <h2>ZHAW</h2>
+                                <h3>Zürich, Schweiz</h3>
+                                <img class="deets" src="img/Logos/ZHAW_logo.png" width="20px">
+                            </div>
+                        </div>
+                        <div class="work">
+                            <div class="timeline">
+                                <img src="img/OpenClose.png" class="OpenClose collapsible">
+                            </div>
+                            <div class="workdetails">
+                                <h3>Sep 2025- Jun 2029 (voraussichtlich) &emsp;|&emsp; Informatik Bsc</h3>
+                                <p>Ausbildungsort ab Sommer 2025 in Teilzeit</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!--Physik-->
+                    <div class="workbox withdeets">
+                        <div class="workbasics">
+                            <div class="download">
+                                <!-- <a href="tbd_download_pwc">
+                                    <img class=dlb_small src="img/DownloadButton.png" alt="">
+                                </a>-->
+                            </div>
+                            <div class="worktitle">
+                                <h2>ETH Zürich</h2>
+                                <h3>Zürich, Schweiz</h3>
+                                <img class='deets' src="img/Logos/ETH_Logo.png">
+                            </div>
+                        </div>
+                        <div class="work">
+                            <div class="timeline">
+                                <img src="img/OpenClose.png" class="OpenClose collapsible">
+                            </div>
+                            <div class="workdetails">
+                                <h3>Sep 2022- Sept 2024&emsp;|&emsp; Physik Bsc</h3>
+                                <p>Ausschluss ohne Abschluss</p>
+                                <h4 class="deets">Akademische Details</h4>
+                                <ul class="deets">
+                                    <li>Informatik: 5.75 (C++, Rep), Datenanalyse der Physik: 4.75 (Python)</li>
+                                    <li>Zusatzfokus Astropartikelphysik und Japanisch</li>
+                                    <li>Semestersprecherin Physik</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Hospitality Management-->
+                    <div class="workbox withdeets">
+                        <div class="workbasics">
+                            <div class="download">
+                                <!-- <a href="tbd_download_pwc">
+                                    <img class=dlb_small src="img/DownloadButton.png" alt="">
+                                </a>-->
+                            </div>
+                            <div class="worktitle">
+                                <h2>EHL Hospitality Business School</h2>
+                                <h3>Lausanne, Schweiz</h3>
+                                <img class='deets' src="img/Logos/EHL_Logo.png">
+                            </div>
+                        </div>
+                        <div class="work">
+                            <div class="timeline">
+                                <img src="img/OpenClose.png" class="OpenClose collapsible">
+                            </div>
+                            <div class="workdetails">
+                                <h3>Sep 2018 - Aug 2022&emsp;|&emsp; International Hospitality Management Bsc </h3>
+                                <p> Abschluss mit Auszeichnung (Honors), Schnitt 5.45 </p>
+                                <h4 class="deets">Akademische Detail</h4>
+                                <ul class="deets">
+                                    <li>Bachelorarbeit (Note 5.75) im Team: UX/UI design für Kitro</li>
+                                    <li>Tutorin für 3 Jahre in technischen und psychologischen Fächern:
+                                        <ul>
+                                            <li>Makro- & Microeconomy</li>
+                                            <li>Statistik</li>
+                                            <li>Financial Analysis & Spreadsheets</li>
+                                            <li>Service Operations Management</li>
+                                            <li>Human Behaviour and Performance & Organizational Capital and Leadership </li>
+                                        </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+        <!-- POP-UP FOR DOWNLOAD -->
+
+        <div class="CvDownload">
+            <div class="contactbox">
+                <div class="contactboxinside">
+                <div id="closex" onclick="ClosePopUp()">
+                    <p>x</p>
+                </div>
+                <h2>Lebenslauf Anfrage</h2>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="inputbox">
+                    <div class="inputs">
+                        <input type="hidden" name="access_key" value="b55669e3-7a21-4e43-9c6a-ffdcb2dbdbf7"> 
+                        <input type="text" class="contact-input" name="name" placeholder="Name" required><br><br>
+                        <input type="email" class="contact-input" name="mail" placeholder="E-Mail" required><br><br>
+                        <select id="downloads" name="Expected Download">
+                            <option value="Nur CV">Nur Lebenslauf</option>
+                            <option value="CV und Briefe">Lebenslauf und Referenzschreiben</option>
+                        </select>
+                    </div>
+                    <input type="submit" class="submit-button" value="> Abschicken">
+                </form>
+            </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!--FOOTER -->
+        <div class="footer">
+            <h3>TAMARA ALTMANN</h3>
+            <a href="mailto:c.tamara.altmann@gmail.com">c.tamara.altmann@gmail.com</a>
+            <div class="socialsfooter">
+                <a href="https://www.linkedin.com/in/tamara-altmann/"><img src="img/Logos/Linked.png" alt="linked in logo"></a>     
+                <a href="https://www.instagram.com/taraa_ca/"><img src="img/Logos/Insta.png" alt="insta logo"></a>
+                <!--- <a href=""><img src="img/Logos/github.png" alt="github logo"></a> --->
+            </div>
+            <div>
+                <h3>&copy; 2025</h3>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </body>
+
+    <script src="app/js/script.js"></script> 
+
+
+
+
+
+</html>

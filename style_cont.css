@@ -1,0 +1,329 @@
+/* --- Fonts --- */
+    /* -- Logo --*/
+    @font-face { /* BenchNineReg */
+        font-family: BenchNineReg;
+        src: url(fonts/BenchNine-Regular.ttf);
+        }
+    
+        /* -- Logo2 --*/
+        @font-face { /* BenchNineLight */
+            font-family: BenchNineLight;
+            src: url(fonts/BenchNine-Light.ttf);
+        }
+    
+        /* -- Lebenslauf Page -- */
+        @font-face { /* Biryani */
+            font-family: Biryani;
+            src: url(fonts/Biryani-Regular.ttf);
+        }
+        @font-face { /* BiryaniBold */
+            font-family: BiryaniBold;
+            src: url(fonts/Biryani-Bold.ttf);
+        }
+    
+    /*--- Fonts End ---*/   
+    
+    
+    /*--- ALL ELEMENTS ---*/
+    * {
+        font-family: 'BenchNineLight';
+    }
+
+
+/* --- START NAVIGATION --- */
+.navigation {
+    position: sticky;
+    top: 0; 
+    z-index: 3;
+    background-color: #000000; 
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+    .leftnav {
+        display: flex;
+        flex-grow: 1;
+        white-space: nowrap;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+    }
+    .leftnav a{
+        flex-wrap: nowrap;
+    }
+        /* Format Name & Die Logo*/
+        .navigation h1 {
+            font-family:'BenchNineLight';
+            font-size: 100%;
+            color: whitesmoke;
+            float: left;
+            margin: 11px 15px 5px 10px;
+        }
+        .round {
+            margin: 5px;
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            float: inline-start;
+        }
+        .menuicon{
+            height: 13px;
+            padding: 13px 10px 0 10px;
+            margin: 0;
+            display: none;
+            cursor: pointer;
+        }
+
+    .rightnav {
+        display: flex;
+        justify-content: end;
+    }
+
+    /* Style the links inside the navigation bar */
+    .lead a{
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 40px;
+        text-decoration: none;
+        font-family: 'BenchNineLight';
+        font-size: 100%;
+    }
+    .navigation p {
+      float: right;
+      color: #f2f2f2;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'BenchNineLight';
+      font-size: 100%;
+      margin: 0;
+      padding: 10px 0;
+    }
+    .navigation a.LanguageChange {
+      margin: 0;
+      padding: 10px 5px;
+    }
+    .rightnav a.LanguageChangeActive {
+      font-weight: bold;
+      padding:  10px 5px;
+    }
+
+
+
+    /* Change the color of links on hover */
+    .navigation a:hover {
+        background-image: linear-gradient(#30392D, black);
+        color: white;
+    }
+    /* Add a color to the active/current link */
+    .navigation a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    @media screen and (max-width: 600px) {
+        .navigation{
+            flex-wrap: wrap;
+        }
+        .rightnav {
+            flex-wrap: wrap;
+        }
+        .rightnav a{
+            display: none;
+        }
+        .rightnav p{
+            display: none;
+        }
+        .menuicon{
+            display: flex;
+            align-self: right;
+        }
+        .rightnav.down a{
+            display: flex;
+            flex-grow: 0;
+            padding: 10px 20px;
+            flex-grow: 1;
+        }
+        .rightnav.down p{
+            display: block;
+        }
+
+        .lead{
+            display: flex;
+            width: 100vw;
+            flex-grow: 1;
+        }
+
+      }
+    
+
+
+
+      
+/* --- START CONTACTS --- */
+
+body{
+    background-image: url(img/pexels-tomas-anunziata-129267-3876407.jpg);
+    background-size: cover;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.contact_content{
+    background-color: rgb(166, 199, 172);
+    display: flex;
+    flex-direction: row;
+    margin: 40px 30px;
+    border-radius: 10px;
+    padding: 30px;
+    justify-content: space-around;
+    max-width: 800px;
+    align-self: center;
+}
+
+.contactbox-left{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-shrink: 0;
+    padding: 0 30px;
+}
+
+.contactbox-left h2{
+    font-size: 50px;
+    margin: 25px 0 15px 0;
+    align-self: center;
+}
+
+.contact-input{
+    border-radius: 5px;
+    width: 250px;
+    margin: 0;
+    min-height: 25px;
+    border: none;
+}
+
+.contact-input:focus{
+    border: 2px solid #124f28;
+}
+.submit-button{
+    background: linear-gradient(90deg, rgb(20, 77, 35), rgb(16, 121, 93));
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 27px;
+    font-size: 15px;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 5px;
+    border: none;
+}
+.submit-button:hover{
+    background: linear-gradient(90deg, rgb(42, 156, 73), rgb(27, 194, 150));
+    font-weight: bold;
+}
+
+
+.contactbox-left textarea{
+    font-size: 15px;
+    height: 50px;
+    max-width: 50vw;
+    max-height: 100vh;
+    min-width: 250px;
+    min-height: 50px;
+}
+
+
+.contactbox-right{
+    margin: 30px 30px 30px 0;
+    padding: 20px; 
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.contact_content img{
+    width: 40vw;
+    max-width: 350px;
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@media (max-width: 700px) {
+    .contact_content{
+        flex-wrap: wrap;
+    }
+    .footer a {
+        display: none;
+      }
+
+}
+
+/* --- END CONTENT --- */
+
+
+
+
+/* --- START FOOTER --- */
+@media screen and (max-width:600px){
+    .footer a{
+        display: none;
+    }
+    .socialsfooter a{
+        display: block;
+    }
+    
+}
+
+.footer {
+    background-color:#29402f; 
+    overflow: hidden;
+    margin: 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
+  .footer h3{
+    font-family:'BenchNineLight';
+    font-size: 100%;
+    color: whitesmoke;
+    float: left;
+    margin: 11px 0 5px 10px;
+  }
+  .footer a{
+    float: left;
+    color: #f2f2f2;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-family: 'BenchNineLight';
+    font-size: 100%;
+  }
+  .socialsfooter a{
+    padding: 0; 
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .footer img{
+    opacity: 80%;
+    width: 32px;
+  }
+  .socialsfooter {
+    display: flex;
+    padding: 5px;
+  }
+
+
+
+/* --- END FOOTER --- */
