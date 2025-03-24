@@ -292,6 +292,7 @@ html {
     .whitecontent a{
         width: 70vw;
         border-radius: 10px;
+        margin-top: 10vh;
         padding-top: 10px;
         font-size: 20px;
         height: 40px;
