@@ -214,14 +214,16 @@ html {
 
 @media screen and (max-width:500px){
     .whitespace{
-        top:-30px;
-        height: 111px;
+        min-height: 30vh;
+        max-height: 40vh;
         overflow: visible;
-        padding :0;
+        padding:0;
     }
     .whitecontent{
+        position: relative;
         background: white;
-        height: 141px;
+        top: -30px;
+        min-width: 141px;
         width: 100vw;
         margin: 0;
     }
@@ -231,7 +233,6 @@ html {
     .footer{
         position: relative;
     }
-
 }
 
 
@@ -280,6 +281,7 @@ html {
     .whitespace{
         position: relative;
         background: white;
+        height: 40vh;
     }
     .greenline{
         display: none;
